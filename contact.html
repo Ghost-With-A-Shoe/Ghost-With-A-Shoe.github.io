@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontend/Nav.css">
+    <link rel="stylesheet" href="frontend/Contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="nav-wrap">
+        <div class="nav-container">
+          <nav class="nav-center">
+            <ul class="nav-list">
+              <div class="sliding-indicator"></div>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                  <span class="nav-icon">
+                    <p>Home</p> 
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                  <span class="nav-icon">
+                    <p>About</p>                
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#notice" class="nav-link">
+                  <span class="nav-icon">
+                    <p>Projects</p>            
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                  <span class="nav-icon">
+                    <p>Contact</p>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology!</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>Email</h3>
+                    <p>damian.dacic06@email.com</p>
+                    <a href="mailto:your.email@example.com" class="contact-link">Send Email</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally</p>
+                    <a href="https://www.linkedin.com/in/damian-dacic-88934537b/" target="_blank" class="contact-link">View Profile</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>GitHub</h3>
+                    <p>Check out my projects</p>
+                    <a href="https://github.com/Ghost-With-A-Shoe" target="_blank" class="contact-link">View Projects</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>Discord</h3>
+                    <p>Let's chat about tech</p>
+                    <a href="#" class="contact-link">Join Server</a>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <div class="contact-form-card">
+                    <h2>Send Me a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <div class="btn-icon"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-footer">
+            <div class="availability-status">
+                <div class="status-indicator online"></div>
+                <p>Currently available for new opportunities</p>
+            </div>
+            <p class="response-time">I typically respond within 24 hours</p>
+        </div>
+    </div>
+
+    <script src="backend/script.js"></script>
+</body>
+</html>

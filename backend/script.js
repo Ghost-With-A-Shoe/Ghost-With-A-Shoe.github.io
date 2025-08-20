@@ -1,6 +1,3 @@
-// Vanilla JS for navigation
-
-// --- NAVIGATION ---
 const navList = document.querySelector('.nav-list');
 const navLinks = document.querySelectorAll('.nav-link');
 const indicator = document.querySelector('.sliding-indicator');
@@ -21,18 +18,21 @@ function moveIndicatorTo(link) {
     const left = pRect.left - navListRect.left + (pRect.width - indicator.offsetWidth) / 2;
     indicator.style.left = `${left}px`;
   } else {
-    // fallback: center under link
     const linkRect = link.getBoundingClientRect();
     const left = linkRect.left - navListRect.left + (linkRect.width - indicator.offsetWidth) / 2;
     indicator.style.left = `${left}px`;
   }
 }
 
-// Set initial active link based on hash or default
 function setInitialActive() {
   let found = false;
   navLinks.forEach(link => {
-    if (window.location.hash === link.getAttribute('href')) {
+    const linkHref = link.getAttribute('href');
+    const currentPage = window.location.pathname.split('/').pop();
+    if (
+      linkHref === currentPage ||
+      (linkHref === 'index.html' && (currentPage === '' || currentPage === 'index.html'))
+    ) {
       setActiveLink(link);
       found = true;
     }
@@ -40,33 +40,32 @@ function setInitialActive() {
   if (!found && navLinks[0]) setActiveLink(navLinks[0]);
 }
 
-// Hover effect for indicator with timer before reset
 navLinks.forEach(link => {
-  link.addEventListener('mouseenter', e => {
+  link.addEventListener('mouseenter', () => {
     if (resetIndicatorTimeout) {
       clearTimeout(resetIndicatorTimeout);
       resetIndicatorTimeout = null;
     }
     moveIndicatorTo(link);
   });
-  link.addEventListener('mouseleave', e => {
+
+  link.addEventListener('mouseleave', () => {
     if (resetIndicatorTimeout) clearTimeout(resetIndicatorTimeout);
     resetIndicatorTimeout = setTimeout(() => {
       const active = document.querySelector('.nav-link-active');
       if (active) moveIndicatorTo(active);
-    }, 350); // 350ms delay
+    }, 500);
   });
-  link.addEventListener('click', e => {
+
+  link.addEventListener('click', () => {
     setActiveLink(link);
-    window.location.hash = link.getAttribute('href');
-    e.preventDefault();
+    window.location.href = link.getAttribute('href');
   });
 });
 
 window.addEventListener('load', setInitialActive);
 window.addEventListener('hashchange', setInitialActive);
 
-// --- LOGO CLICK (optional) ---
 document.getElementById('logo').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
