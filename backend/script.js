@@ -65,7 +65,3 @@ navLinks.forEach(link => {
 
 window.addEventListener('load', setInitialActive);
 window.addEventListener('hashchange', setInitialActive);
-
-document.getElementById('logo').addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
