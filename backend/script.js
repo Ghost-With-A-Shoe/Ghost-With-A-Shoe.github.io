@@ -4,6 +4,9 @@
   const indicator = document.querySelector('.sliding-indicator');
   if (!navList || !navLinks.length || !indicator) return;
 
+  const INDICATOR_RESET_DELAY_MS = 1000;
+  let indicatorResetTimeout = null;
+
   const sectionIds = ['hero', 'about', 'projects', 'contact'];
   const sections = sectionIds
     .map(id => document.getElementById(id))
@@ -44,10 +47,20 @@
       }
     });
 
-    link.addEventListener('mouseenter', () => moveIndicatorTo(link));
+    link.addEventListener('mouseenter', () => {
+      if (indicatorResetTimeout) {
+        clearTimeout(indicatorResetTimeout);
+        indicatorResetTimeout = null;
+      }
+      moveIndicatorTo(link);
+    });
     link.addEventListener('mouseleave', () => {
-      const active = document.querySelector('.nav-link-active');
-      if (active) moveIndicatorTo(active);
+      if (indicatorResetTimeout) clearTimeout(indicatorResetTimeout);
+      indicatorResetTimeout = setTimeout(() => {
+        const active = document.querySelector('.nav-link-active');
+        if (active) moveIndicatorTo(active);
+        indicatorResetTimeout = null;
+      }, INDICATOR_RESET_DELAY_MS);
     });
   });
 
