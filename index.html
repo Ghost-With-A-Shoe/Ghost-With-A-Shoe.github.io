@@ -3,65 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Damian Dacic — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="frontend/Base.css">
   <link rel="stylesheet" href="frontend/Nav.css">
   <link rel="stylesheet" href="frontend/Main.css">
 </head>
 <body>
-  <div class="animated-shapes"></div>
-  <div class="nav-wrap">
+  <header class="nav-wrap">
     <div class="nav-container">
       <nav class="nav-center">
         <ul class="nav-list">
           <div class="sliding-indicator"></div>
           <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              <span class="nav-icon">
-                <p>Home</p> 
-              </span>
-            </a>
+            <a href="index.html" class="nav-link"><p>Home</p></a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              <span class="nav-icon">
-                <p>About</p>                
-              </span>
-            </a>
+            <a href="about.html" class="nav-link"><p>About</p></a>
           </li>
           <li class="nav-item">
-            <a href="projects.html" class="nav-link">
-              <span class="nav-icon">
-                <p>Projects</p>            
-              </span>
-            </a>
+            <a href="projects.html" class="nav-link"><p>Projects</p></a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              <span class="nav-icon">
-                <p>Contact</p>
-              </span>
-            </a>
+            <a href="contact.html" class="nav-link"><p>Contact</p></a>
           </li>
         </ul>
       </nav>
     </div>
-  </div>
-  <div class="main-content">
-    <div class="hero-section">
-      <div class="hero-content">
-        <h1>Damian Dacic</h1>
-        <div class="ctn-button">
-          <a href="#contact" class="ctn-button-link">Contact Me</a>
-        </div>
-      </div>
-      <div class="projects">
-        <a href="projects.html"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="Projects"></a>
-        <a href="projects.html"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="Projects"></a>
-        <a href="projects.html"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="Projects"></a>
-        <a href="projects.html"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="Projects"></a>
+  </header>
+
+  <main class="hero">
+    <h1>Damian Dacic</h1>
+    <p class="hero-tagline">Web development & machine learning</p>
+    <div class="hero-ctas">
+      <a href="projects.html" class="btn btn-primary">View projects</a>
+      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
     </div>
-  </div>
+  </main>
+
   <script src="backend/script.js"></script>
-  <script src="backend/Main.js"></script>
 </body>
 </html>

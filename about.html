@@ -3,146 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Damian Dacic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="frontend/Base.css">
   <link rel="stylesheet" href="frontend/Nav.css">
   <link rel="stylesheet" href="frontend/About.css">
-  <title>About</title>
 </head>
 <body>
-    <div class="nav-wrap">
-        <div class="nav-container">
-          <nav class="nav-center">
-            <ul class="nav-list">
-              <div class="sliding-indicator"></div>
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">
-                  <span class="nav-icon">
-                    <p>Home</p> 
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">
-                  <span class="nav-icon">
-                    <p>About</p>                
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="projects.html" class="nav-link">
-                  <span class="nav-icon">
-                    <p>Projects</p>            
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">
-                  <span class="nav-icon">
-                    <p>Contact</p>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+  <header class="nav-wrap">
+    <div class="nav-container">
+      <nav class="nav-center">
+        <ul class="nav-list">
+          <div class="sliding-indicator"></div>
+          <li class="nav-item"><a href="index.html" class="nav-link"><p>Home</p></a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link"><p>About</p></a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link"><p>Projects</p></a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link"><p>Contact</p></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="about-intro">
+      <h1>About me</h1>
+      <p class="about-lead">I'm a student at NTI (TE4), focused on web development and machine learning. I like building useful things and learning by doing.</p>
+    </section>
+
+    <section class="about-skills">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <span class="skill-label">Frontend</span>
+        <div class="tags">HTML · CSS · Vue · Svelte</div>
       </div>
-      <div class="about-container">
-        <img src="" alt="ME">
-        <div class="about-text">
-          <h1>About Me</h1>
-          <p>I am a student who is currently studying TE4 at NTI, I am a passionate about web development and machine learning. I am a hardworking and dedicated student who is always looking for new challenges and opportunities to learn.</p>
-        </div>
-        <div class="about-cards">
-            <div class="about-card">
-                <h2>Frontend</h2>
-                <div class="about-card-bubbles-container">
-                    <div class="about-card-bubble">
-                        <p>HTML</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>CSS</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>Vue</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>Svelte</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-card">
-                <h2>Backend</h2>
-                <div class="about-card-bubbles-container">
-                    <div class="about-card-bubble">
-                        <p>TypeScript</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>MySQL</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-card">
-                <h2>Andra verktyg</h2>
-                <div class="about-card-bubbles-container">
-                    <div class="about-card-bubble">
-                        <p>Git</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>VSCode</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>Cursor</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>InteliJ</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>ChatGPT</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>Electron</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-card">
-                <h2>Andra språk</h2>
-                <div class="about-card-bubbles-container">
-                    <div class="about-card-bubble">
-                        <p>Python</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>Java</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>C++</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>C#</p>
-                    </div>
-                    <div class="about-card-bubble">
-                        <p>GML</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about-journy">
-            <h1>Min resa</h1>
-            <div class="about-journy-text">
-                <p>Jag har alltid varit intresserad av teknik och programmering. Jag började programmera i 10-årsåldern och har sedan dess fortsatt att utveckla mina kunskaper. Jag har arbetat med allt från webbutveckling till maskininlärning och AI. Jag har även arbetat med spelutveckling och 3D-modellering.</p>
-            </div>
-            <div class="about-journy-goals">
-                <h2>Mina mål</h2>
-                <div class="about-journy-goals-card">
-                    <p>Jag vill bli en utvecklare som kan skapa saker som är användbara och hjälper människor.</p>
-                </div>
-                <div class="about-journy-goals-card">
-                    <p>Jag vill bli en utvecklare som kan skapa saker som är användbara och hjälper människor.</p>
-                </div>
-            </div>
-        </div>
+      <div class="skill-group">
+        <span class="skill-label">Backend</span>
+        <div class="tags">TypeScript · JavaScript · MySQL</div>
       </div>
+      <div class="skill-group">
+        <span class="skill-label">Tools</span>
+        <div class="tags">Git · VSCode · Cursor · IntelliJ · Electron</div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-label">Other languages</span>
+        <div class="tags">Python · Java · C++ · C# · GML</div>
+      </div>
+    </section>
+
+    <section class="about-journey">
+      <h2>Background</h2>
+      <p>I've been into tech and programming since I was young and have kept learning—from web dev to ML and AI, plus some game dev and 3D. I want to build software that actually helps people.</p>
+    </section>
+  </main>
+
+  <script src="backend/script.js"></script>
 </body>
-<script src="backend/script.js"></script>
 </html>
