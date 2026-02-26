@@ -17,30 +17,145 @@
       <nav class="nav-center">
         <ul class="nav-list">
           <div class="sliding-indicator"></div>
-          <li class="nav-item">
-            <a href="index.html" class="nav-link"><p>Home</p></a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link"><p>About</p></a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link"><p>Projects</p></a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link"><p>Contact</p></a>
-          </li>
+          <li class="nav-item"><a href="#hero" class="nav-link" data-section="hero"><p>Home</p></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-section="about"><p>About</p></a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link" data-section="projects"><p>Projects</p></a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact"><p>Contact</p></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="hero">
-    <h1>Damian Dacic</h1>
-    <p class="hero-tagline">Web development & machine learning</p>
-    <div class="hero-ctas">
-      <a href="projects.html" class="btn btn-primary">View projects</a>
-      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
-    </div>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-bg-dot hero-bg-dot-1"></span>
+        <span class="hero-bg-dot hero-bg-dot-2"></span>
+        <span class="hero-bg-dot hero-bg-dot-3"></span>
+        <span class="hero-bg-dot hero-bg-dot-4"></span>
+      </div>
+      <div class="hero-inner">
+        <h1>Damian Dacic</h1>
+        <p class="hero-tagline">Web development & machine learning</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-about">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="section-title">About me</h2>
+        <p class="about-lead">I'm a student at NTI (TE4), focused on web development and machine learning. I like building useful things and learning by doing.</p>
+        <div class="about-skills">
+          <h3 class="section-label">Skills</h3>
+          <div class="skill-group">
+            <span class="skill-label">Frontend</span>
+            <div class="tags">HTML · CSS · Vue · Svelte</div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">Backend</span>
+            <div class="tags">TypeScript · JavaScript · MySQL</div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">Tools</span>
+            <div class="tags">Git · VSCode · Cursor · IntelliJ · Electron</div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">Other languages</span>
+            <div class="tags">Python · Java · C++ · C# · GML</div>
+          </div>
+        </div>
+        <div class="about-journey">
+          <h3 class="section-label">Background</h3>
+          <p>I've been into tech and programming since I was young and have kept learning—from web dev to ML and AI, plus some game dev and 3D. I want to build software that actually helps people.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-projects">
+      <div class="section-inner section-inner-wide">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Things I've built. More coming soon.</p>
+        <div class="grid">
+          <article class="card">
+            <a href="#" class="card-link">
+              <div class="card-img">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="">
+              </div>
+              <div class="card-body">
+                <h3>Project one</h3>
+                <p>Short description.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-link">
+              <div class="card-img">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="">
+              </div>
+              <div class="card-body">
+                <h3>Project two</h3>
+                <p>Short description.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-link">
+              <div class="card-img">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="">
+              </div>
+              <div class="card-body">
+                <h3>Project three</h3>
+                <p>Short description.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-link">
+              <div class="card-img">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN1b2s0dnNraGQzeWtiOHd5N3h5dWRtYnlod2Z1NTBzNWMzZzd1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lJNoBCvQYp7nq/giphy.gif" alt="">
+              </div>
+              <div class="card-body">
+                <h3>Project four</h3>
+                <p>Short description.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="section-inner section-inner-narrow">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-desc">Open to opportunities and conversations about tech.</p>
+        <div class="contact-links">
+          <a href="mailto:damian.dacic06@email.com" class="contact-item">Email — damian.dacic06@email.com</a>
+          <a href="https://www.linkedin.com/in/damian-dacic-88934537b/" target="_blank" rel="noopener" class="contact-item">LinkedIn</a>
+          <a href="https://github.com/Ghost-With-A-Shoe" target="_blank" rel="noopener" class="contact-item">GitHub</a>
+        </div>
+        <div class="contact-form-wrap">
+          <h3 class="section-label">Send a message</h3>
+          <form class="form" id="contactForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="backend/script.js"></script>
